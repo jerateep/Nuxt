@@ -1,26 +1,22 @@
 <template>
-  <b-container fluid>
+  <b-container fluid = "md">
     <Logo/>
     <h1>Posts</h1>
     <Header/>
-    <b-row class="py-2">
-      <PostContant/>
-      <PostContant/>
-      <PostContant/>
-    </b-row>
+    <PostList/>
   </b-container>
 </template>
 
 <script>
 import Logo from '@/components/Logo'
 import Header from '@/components/posts/Header'
-import PostContant from '@/components/posts/PostContant'
+import PostList from '@/components/posts/PostList'
 export default {
   layout:"coreLayout",
   components:{
     Header
     , Logo
-    , PostContant
+    , PostList
   }
 }
 </script>
